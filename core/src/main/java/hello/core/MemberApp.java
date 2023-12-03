@@ -8,7 +8,7 @@ import hello.core.member.MemberServiceimpl;
 public class MemberApp {
     public static void main(String[] args) {
         MemberService memberService = new MemberServiceimpl();
-        Member member = new Member(1L, "memberA", Grade.VIp);
+        Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
         Member findMember = memberService.findMember(1L);
         System.out.println("회원 아이디 : " + findMember.getId() + "\n회원 이름 : " + findMember.getName());
